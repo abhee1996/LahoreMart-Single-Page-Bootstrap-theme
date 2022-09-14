@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>LahoreKart</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .body-color{
+            background: #FCFBFB;
+        }
+        .pinkish-light{
+            background-color: #F5F2EE;
+        }
+        .card img,.banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .mahroon{
+            background-color: #822432;
+        }
+        .mahroon-text{
+            color: #822432;
+            font-weight: 500;
+        }
+        .active-mahronish{
+            background-color: #F5F2EE;
+            color:#822432 ;
+            font-weight: bold;
+        }
+        .border-bottom{
+            border-bottom: 1px solid #f5f2ee;
+
+        }
+        .nav-text a,#category ul li a {
+            color: #822432;
+        }
+        aside{
+            background: #FCFBFB;
+        }
+        .addScroll {
+        overflow-y: auto;
+        max-height: 140px;
+        }
+        footer a{
+             color: #67524A;
+        }
+        .text-silentbrown{
+            color: #9b9691;
+        }
+        .bg-silentbrown{
+            background-color: #9b9691;
+        }
+        .bg-shinewhite{
+            background-color: #FCFBFB;
+        }
+        .text-shinewhite{
+            color: #FCFBFB;
+        }
+        .text-mehroon{
+            color: #822432;;
+        }
+        .tb ul li{
+            text-decoration: none;
+        }
+        .tb a{
+            text-decoration: none;
+        }
+        .tb a:hover{
+            border-bottom: 2px solid  #822432;
+        }
+        .tb .tbul .tbli a :hover #womenCategory {
+            display: inline-block;
+        }
+    </style>    
+</head>
+<body>
+    <!-- Header -->
+    <header class="body-color navbar navbar-expand-lg fixed-top border-bottom bg-shinewhite" >
+        <button class="navbar-toggler border float-left" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="logo ">
+                <a class="navbar-brand">LahoreMart</a>
+        </div>
+
+        <button class="navbar-toggler border p-2 " type="button" data-toggle="collapse" data-target="#navbarSearchContent" aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="mahroon-text fa fa-search"></span>
+        </button>
+            <div id="navbarsearchcontent" class="collapse navbar-collapse  input-group rounded  col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
+
+                <div class="input-group-append ">
+                    <button class="btn border pinkish-light  dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listing</button>
+                    <div class="dropdown-menu pinkish-light" >
+                                <a class="dropdown-item" href="#" selected>Listing</a>
+                            <div role="separator" class="dropdown-divider"> </div>
+                                <a class="dropdown-item" href="#">People</a>
+
+                    </div>
+                </div>
+            <input id="navbarsearchcontent" class="form-control col-sm-3 pinkish-light"  type="search" placeholder="search"/>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary mahroon"  type="submit"><i class="fa fa-search text-light" aria-hidden="true"></i></button>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse col-10 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                <ul class="navbar-nav text-priamary ">
+                    <li class="nav-item"><a class="nav-link mahroon-text  border-right" href="#">Login</a> </li>
+                    <li class="nav-item"><a class="nav-link  mahroon-text " href="#">SignUp</a> </li>
+
+                </ul>
+            </div>
+
+    </header>
+    <!-- Navigation -->
+        <nav  class=" navbar navbar-expand-lg  border-top  mt-5 bg-shinewhite">
+            <div  class=" navbar-collapse border-right col-12 col-sm-2 col-md-2 col-lg-1">
+
+                <ul class=" navbar-nav ">
+                    <li class=" nav-text dropdown  text-dark  text-uppercase" style="font-family: sans-serif; font-size: 12px; font-weight: bolder;">
+                        Lahore Market
+                            <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" >
+                                All <span class="caret"></span>
+                            </a>
+                        <ul class=" dropdown-menu ">
+                                <li class="nav-item active-mahronish">
+                                    <a href="#" class="nav-link">
+                                        <span>
+                                            <img src="img/Screenshot_1.jpg" alt="" style="width: 25px; border-radius:50%;" srcset="">
+                                        </span>
+                                         Shirt
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link ">Jeans</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a href="#" class="nav-link">Shoes</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a href="#" class="nav-link">Cosmatics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Jewelry</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Sports</a>
+                                </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div     id="navbarSupportedContent" class="collapse navbar-collapse   col-12 col-sm-8 col-md-8 col-lg-7 col-xl-7">
+              <ul class="navbar-nav nav-text float-left">
+                <li class=" dropdown">
+                 <a  href="#womencategory" data-toggle="dropdown" data-target="#womencategory" class="nav-link dropdown-toggle">Women</a>
+                    <div class="dropdown-menu ">
+                        <div class="dropdown-item ">
+                             <div class="container-fluid"> 
+                                <div class=" row w-100 dropdown-item">
+                                   
+                                                <ul class="list-unstyled col-md-12">
+                                                    <li>
+                                                        <h5 class="font-weight-bold text-uppercase">
+                                                        Accessories
+                                                       </h5>
+                                                   </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Belts</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Glasses</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Groves & Mittens</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Hats</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Phone Cases</a>
+                                                    </li>
+                                                </ul>
+
+
+                                          
+                                                <ul class="list-unstyled col-md-12">
+                                                    <li class="nav-item">
+                                                        <h5 class="font-weight-bold text-uppercase">
+                                                            Bags
+                                                        </h5>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Belts</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0  ">Glasses</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Groves & Mittens</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Hats</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Phone Cases</a>
+                                                    </li>
+                                                </ul>
+
+
+                                           
+                                                
+                                                <ul class="list-unstyled col-md-12">
+                                                    <li class="nav-item">
+                                                        <h5 class="font-weight-bold text-uppercase">
+                                                            Bags
+                                                        </h5>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Belts</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0  ">Glasses</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Groves & Mittens</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Hats</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link text-small pb-0 ">Phone Cases</a>
+                                                    </li>
+                                                </ul>
+
+
+                                          
+                                </div>
+                          </div> 
+                        </div>
+                    </div>
+
+
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Men</a>
+                    <ul class="nav">
+                        <li class="nav-item">
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Kid</a>
+                    <ul class="nav">
+                            <li class="nav-item">
+
+                            </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Home</a>
+                    <ul class="nav">
+                            <li class="nav-item">
+
+                            </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Brand</a>
+                    <ul class="nav">
+                            <li class="nav-item">
+
+                            </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Parties</a>
+                    <ul class="nav">
+                            <li class="nav-item">
+
+                            </li>
+                    </ul>
+                </li>
+              </ul>
+
+            </div>
+
+                    <ul class="nav navbar float-right">
+                            <li class="nav-item text-silentbrown">
+                                    <a class=" nav-link">How it works</a>
+                            </li>
+                            <li class="nav-item nav-text">
+                                    <a class=" nav-link"><i class="fas fa-dollar"></i>Sell on Poshmark</a>
+                            </li>
+                    </ul>
+
+
+        </nav>
+        <!-- breadcrumb -->
+        <nav class="body-color" aria-label="breadcrumb">
+                <ul class="body-color breadcrumb">
+                    <li class="breadcrumb-item "><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Men</a></li>
+                </ul>
+        </nav>
+        <!-- Main Section -->
+         <section class="container-fluid">
+            <div class="row">
+                <!-- sidebar Menu -->
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 sidebar border-right">
+                    
+                            <!-- Category  -->
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+
+                            <ul class="navbar-nav my-2 text-silentbrown">
+                                    
+                                <li class=" nav-item text-uppercase  px-1 border-bottom ">
+                                    <a class="nav-link text-dark  text-decoration-none text-uppercase " data-toggle="collapse" href="#category">
+                                        Categories<span class="float-right">+</span>
+                                    </a>
+
+                                    <div class=" collapse navbar-collapse" id="category">
+                                            <ul class="list-group flex-column">
+                                                <li class="list-group list-group-flush">
+                                                    <a href="#womenCategory" data-toggle="collapse" class="nav-link ">Women</a>
+                                                    <div id="womenCategory" class="collapse">
+                                                        <ul class="list-group list-group-item">
+                                                                <li class="list-group">
+                                                                    <a href="#" class="list-group-link"> Shirt</a>
+                                                                </li>
+                                                                <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Jeans</a>
+                                                                </li>
+                                                                <li class="list-group">
+                                                                        <a href="#" class="list-group-link">Shoes</a>
+                                                                </li>
+                                                                <li class="list-group">
+                                                                        <a href="#" class="list-group-link">Cosmatics</a>
+                                                                </li>
+                                                                <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Jewelry</a>
+                                                                </li>
+                                                                <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Sports</a>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group">
+                                                    <a href="#menCategory" data-toggle="collapse" class="nav-link">Men</a>
+                                                    <div id="menCategory" class="collapse">
+                                                        <ul class="list-group ">
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link"> Shirt</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Jeans</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Shoes</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Cosmatics</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Jewelry</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Sports</a>
+                                                            </li>
+                                                    </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group">
+                                                    <a href="#kidCategory" data-toggle="collapse" class="nav-link">Kid</a>
+                                                    <div id="kidCategory" class="collapse">
+                                                        <ul class="list-group ">
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link"> Shirt</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Jeans</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Shoes</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                    <a href="#" class="list-group-link">Cosmatics</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Jewelry</a>
+                                                            </li>
+                                                            <li class="list-group">
+                                                                <a href="#" class="list-group-link">Sports</a>
+                                                            </li>
+                                                    </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                                <!-- Brands -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+
+                                        <ul class="navbar-nav my-2 py-3  text-silentbrown">
+                                                <li class=" nav-item text-uppercase  px-1 border-bottom  " data-spy="scroll" data-target="#brandcheckscroll" data-offset="10">
+                                                    <a class="nav-link text-dark text-decoration-none text-uppercase " data-toggle="collapse" href="#brand">
+                                                        Brand<span class="float-right">+</span>
+                                                    </a>
+
+                                                        <div class="nav-text collapse navbar-collapse form-group " id="brand">
+                                                            <input class="form-control " type="search" name="brands" placeholder="Search Brand " />
+                                                                <ul class="list-group flex-column addScroll" id="brandcheckscroll">
+                                                                        <li class="list-group d-inline-block">
+                                                                            <input type="checkbox" value="shirt">
+                                                                            <a href="#shirt" class="list-group-link"> Shirt</a>
+                                                                        </li>
+                                                                        <li class="list-group d-inline-block">
+                                                                            <input type="checkbox" value="jeans">
+                                                                            <a href="#jeans" class="list-group-link"> jeans</a>
+                                                                        </li>
+                                                                        <li class="list-group d-inline-block">
+                                                                            <input type="checkbox" value="pents">
+                                                                            <a href="#pents" class="list-group-link"> pents</a>
+                                                                        </li>
+                                                                        <li class="list-group d-inline-block">
+                                                                            <input type="checkbox" value="shoes">
+                                                                            <a href="#shoes" class="list-group-link"> shoes</a>
+                                                                        </li>
+                                                                        <div class="form-check d-inline-block ">
+                                                                            <label for="" class="form-check-label">
+                                                                                <input type="checkbox" class="form-check-input" value="shirt">
+                                                                                <a href="#shirt" class="list-group-link"> Shirt</a>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check d-inline-block">
+                                                                            <label for="" class="form-check-label">
+                                                                                <input type="checkbox" class="form-check-input" value="jeans">
+                                                                                <a href="#jeans" class="list-group-link"> jeans</a>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check d-inline-block">
+                                                                            <label for="" class="form-check-label">
+                                                                                <input type="checkbox" class="form-check-input" value="pents">
+                                                                                <a href="#pents" class="list-group-link"> pents</a>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check d-inline-block">
+                                                                            <label for="" class="form-check-label">
+                                                                                <input type="checkbox" class="form-check-input" value="shoes">
+                                                                                <a href="#shoes" class="list-group-link"> shoes</a>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check d-inline-block">
+                                                                            <label for="" class="form-check-label">
+                                                                                <input type="checkbox" class="form-check-input" value="whest">
+                                                                                <a href="#whest" class="list-group-link"> whest</a>
+                                                                            </label>
+                                                                        </div>
+                                                                </ul>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <!-- Size -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+
+                                <ul class="navbar-nav border-bottom  text-silentbrown">
+                                <li class=" nav-item border-0  " >
+                                    <a class="nav-link text-decoration-none  text-dark text-uppercase " data-toggle="collapse" href="#size">
+                                        size<span class="float-right">+</span>
+                                    </a>
+
+                                    <ul class="nav-text collapse navbar-collapse form-group addScroll" id="size">
+                                        <p class="text-uppercase text-small">Standard</p>
+                                        <li class=" list-group ">
+                                            <li class="btn list-group-link rounded m-1  border">23</li>
+                                            <li class="btn rounded m-1  border">24</li>
+                                            <li class="btn rounded m-1  border">25</li>
+
+                                        
+                                            <li class="btn rounded mx-1 my-1 border">26</li>
+                                            <li class="btn rounded mx-1 my-1 border">27</li>
+                                            <li class="btn rounded mx-1 my-1 border">28</li>
+
+                                        
+                                            <li class="btn rounded mx-1 my-1 border">29</li>
+                                            <li class="btn rounded mx-1 my-1 border">30</li>
+                                            <li class="btn rounded mx-1 my-1 border">00</li>
+                                        
+                                            <li class="btn rounded mx-1 my-1 border">0</li>
+                                            <li class="btn rounded mx-1 my-1 border">2</li>
+                                            <li class="btn rounded mx-1 my-1 border">4</li>
+                                        
+                                        <p class="text-uppercase text-small">Plus</p>
+                                        
+                                            <li class="btn rounded mx-1 my-1 border">32</li>
+                                            <li class="btn rounded mx-1 my-1 border">34</li>
+                                            <li class="btn rounded mx-1 my-1 border">14</li>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                </div>
+                                <!-- Color -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+
+                                <ul class="navbar-nav   text-silentbrown">
+                                <li class=" nav-item border-bottom  " >
+                                    <a class="nav-link text-decoration-none text-dark text-uppercase " data-toggle="collapse" href="#color">
+                                        color<span class="float-right">+</span>
+                                    </a>
+
+                                    <ul class="nav-text collapse navbar-collapse form-group addScroll" id="color">
+                                        <p class="text-uppercase text-small">Standard</p>
+                                        <li class=" list-group ">
+
+                                            <li style="background-color: grey;" class="btn rounded-circle p-3 m-1 border "><a href="#"></a></li>
+                                            <li style="background-color: yellow;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: blue;" class="btn rounded-circle p-3 m-1   border "><a href="#"></a></li>
+                                            <li style="background-color: red;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: orange;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: pink;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: cyan;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: magenta;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: maroon;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: mediumseagreen;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: mediumslateblue;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: midnightblue;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: olive;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: palevioletred;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: purple;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                            <li style="background-color: saddlebrown;" class="btn rounded-circle p-3 m-1  border "><a href="#"></a></li>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                </div>
+                                <!-- Price -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+
+                                <ul class="navbar-nav   text-silentbrown">
+                                <li class=" nav-item border-bottom  " >
+                                    <a class="nav-link text-decoration-none  text-dark text-uppercase " data-toggle="collapse" href="#price">
+                                        price<span class="float-right">+</span>
+                                    </a>
+                                    <ul class="nav-text collapse navbar-collapse form-group addScroll" id="price">
+                                        <p class="text-uppercase text-small">Standard</p>
+                                        <li class=" list-group ">
+
+                                            <li  class="list-group d-block text-dark "><input type="checkbox"/> Under 25$</li>
+                                            <li  class="list-group d-block text-dark "><input type="checkbox"/></li>
+                                            <li  class="list-group d-block text-dark "><input type="checkbox"/></li>
+                                            <li  class="list-group d-block text-dark "><input type="checkbox"/></li>
+                                            <li  class="list-group d-block text-dark"><input type="checkbox"/></li>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                             </ul>
+                             </div>
+                </div>
+                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 ">
+                        <!-- Product-cards -->
+                            <div class="row my-3">
+                                <div class="banner col-12 col-sm-12 col-md-12 col-lg-12 mb-5 ">
+                                    <img  src="/img/banner_1.jpg" alt="">
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_7.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <div class="d-inline-block col-4 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 "><a href="#" class="card-link"><i class=" fa fa-heart "></i></a></div>
+                                            <div class="d-inline-block col-4 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><a href="#" class="card-link"><i class=" fa fa-envelope "></i></a></div>
+                                            <div class="d-inline-block col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><a href="#" class="card-link"><i class=" fa fa-cart-plus "></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_10.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block ">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart "></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope "></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus "></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2 ">
+                                    <div class="card ">
+                                        <img src="img/Screenshot_6.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_5.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_8.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_7.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_6.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_e.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/s_5e8ee38f045e39534611e79e.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                                    <div class="card">
+                                        <img src="img/Screenshot_8.jpg" alt="" >
+                                        <div class="card-body">
+                                            <h4 class="card-title">levis shirt</h4>
+                                            <h6 class="card-text">size:S/M/L/xL</h6>
+                                            <p class="card-text">price:13$ <del>20$</del></p>
+                                        </div>
+                                        <div class="card-footer d-inline-block">
+                                            <a href="#" class="card-link"><i class=" fa fa-heart ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-envelope ml-3 mr-3"></i></a>
+                                            <a href="#" class="card-link"><i class=" fa fa-cart-plus ml-3 mr-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>
+            </div>
+         </section>
+<footer class="container-fluid pinkish-light px-4 py-4 mt-5 px-md-4">
+    <div class="row py-4 ">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+            <h6 class="text-uppercase text-small">
+                shop categories
+            </h6>
+            <ul class="list-unstyled   text-uppercase text-small">
+                <li class=""><a href="#" >Women</a></li>
+                <li class=""><a href="#" >Men</a></li>
+                <li class=""><a href="#" >Kid</a></li>
+                <li class=""><a href="#" >Home</a></li>
+                <li class=""><a href="#" >Handbags</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+            <h6 class="text-uppercase text-small">
+                Popular brands
+            </h6>
+            <ul class="list-unstyled  pinkish-light  text-uppercase text-small">
+                <li class="text-silentbrown  "><a href="#" >Nike</a></li>
+                <li class="text-silentbrown "><a href="#" >Michael Kors</a></li>
+                <li class="text-silentbrown "><a href="#" >Louis Vuitton</a></li>
+                <li class="text-silentbrown "><a href="#" >lululemon athletica</a></li>
+                <li class="text-silentbrown "><a href="#" >See All Brands »</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <h6 class="text-uppercase text-small">
+                Company
+            </h6>
+            <ul class="list-unstyled  pinkish-light  text-uppercase text-small">
+                <li class="text-silentbrown  "><a href="#" >About</a></li>
+                <li class="text-silentbrown "><a href="#" >Our Community</a></li>
+                <li class="text-silentbrown "><a href="#" >Blog</a></li>
+                <li class="text-silentbrown "><a href="#" >FAQs</a></li>
+                <li class="text-silentbrown "><a href="#" >Sell on Poshmark</a></li>
+            </ul>
+
+        </div>
+        <div class="col-12 col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+            <div class="d-block mb-4">
+                <h6 class="text-uppercase text-small">
+                    Buy and sell on app
+
+                </h6>
+                <span class="mr-2"><img src="img/appstore.jpg" alt="" srcset=""></span>
+                <span class="ml-3"><img src="img/gplay.jpg" alt="" sizes="" srcset=""></span>
+            </div>
+            <div class="d-block mb-4 ">
+                <h6 class="text-uppercase text-small">
+                    Connect with us
+
+                </h6>
+                <span class="mr-2"><i class="fa fa-facebook"></i></span>
+                <span class="ml-3"><i class="fa fa-twitter"></i></span>
+                <span class="ml-3"><i class="fa fa-pinterest"></i></span>
+                <span class="ml-3"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+            </div>
+            <!-- <div class="d-block mb-4">
+                <h6 class="text-uppercase text-small">
+                    Shop in
+
+                </h6>
+                <div class="dropdown collapse dropdown-toggle">
+                    <ul class="list-group list-group-item dropdown-menu ">
+                        <li >US</li>
+                        <li>Canada</li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="input-group  d-block ">
+                <h6 class="text-uppercase text-small">
+                    Shop in
+
+                </h6>
+                <div  class="dropdown-menu  m-3" >
+                            <div class="active-mahronish dropdown-item d-inline-block ">
+                                <img src="img/usa-flag.png" style="width: 25px; border-radius:10%;" alt="usa-flag">
+                            <a  href="#" > US</a>
+                            </div>
+                        <div role="separator" class="dropdown-divider"> </div>
+                            <a class="dropdown-item" href="#"> <img src="img/canada-flag.png" style="width: 25px; border-radius:10%;" alt="canada-flag"> Canada</a>
+
+                </div>
+                <button class="btn border pinkish-light  dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/usa-flag.png" style="width: 25px; border-radius:10%;"  alt="usa-flag">US</button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row border-top py-4 px-5 pb-0">
+        <div class=" col-md-1"></div>
+        <div class="col-md-2"><a href="#">© 2020 Poshmark, Inc.</a></div>
+        <div class="col-md-1"><a href="#">Privacy</a></div>
+        <div class="col-md-1"><a href="#">Term</a></div>
+        <div class="col-md-2"><a href="#">Copyright Policy</a></div>
+        <div class="col-md-1"><a href="#">Contact</a></div>
+        <div class="col-md-3"><a href="#">Do Not Sell (California residents only)</a></div>
+    </div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
